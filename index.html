@@ -7,12 +7,14 @@
   </head>
   <body>
     <h1>Self Details Form</h1>
-    <form action="">
+    <form id="formTag">
       First Name :
       <input
         type="text"
         placeholder="Enter your First name"
         name="Name"
+        class="firstname"
+        value=""
         required
       />
       <br />
@@ -20,31 +22,53 @@
         type="text"
         placeholder="Enter your Last name"
         name="Name"
+        class="lastname"
+        value=""
         required
       />
       <br />
       Email :
-      <input type="Email" placeholder="xyz@gmail.com" value="@gmail.com" />
-      <br />password : <input name="password" type="password" /> <br />Time of
-      meeting :
-      <input name="timeof-meeting" type="date" />
-      <br />Select all of Hobbies from option below :<br />
-      <input type="checkbox" name="Hobbies" value="swimming" />Swimming<br />
-      <input type="checkbox" name="Hobbies" value="cycling" />cycling<br />
-      <input type="checkbox" name="Hobbies" value="walking" />walking<br />
+      <input
+        type="Email"
+        name="email"
+        placeholder="xyz@gmail.com"
+        id="email"
+        value="@gmail.com"
+      />
+      <br />password :
+      <input name="password" placeholder="Enter Password" type="password" />
+      <br />
+      <!-- Time of meeting :
+      <input name="timeof-meeting" type="date" /> -->
+      Select all of Hobbies from option below :<br />
+      <select id="hobbies" title="submit">
+        <option type="checkbox" name="Hobbies" value="swimming">
+          Swimming
+        </option>
+        <option  name="Hobbies" value="cycling">Cycling</option>
+        <option name="Hobbies" value="walking">Walking</option>
+      </select>
+      <br />
       Upload your Resume
-      <input type="file" name="resume" />
+      <input type="file" name="resume" placeholder="resume" id="resume" />
       <br />Select your birth year
-      <select name="birth-year">
+      <select name="birth-year" id="birthyear" title="submit">
         <option value="1998">1998</option>
         <option value="1999">1999</option>
         <option value="2000">2000</option>
-        <option value="2001">2001</option></select
-      ><br />
-      Gender <input type="radio" value="true" > Male</input>
-      <input type="radio" value="false">Female</input><br/>
-      <button type="submit">submit</button>
-      <button type="reset">reset</button>
+        <option value="2001">2001</option>
+      </select>
+      <br />
+      Gender
+      <select id="gender" title="submit">
+        <option  >Male</option>
+        <option >Female</option>
+      </select>
+      <br />
+      <input type="submit" />
+      <input type="reset">reset</input>
     </form>
+    <script src="index.js"></script>
   </body>
 </html>
+
