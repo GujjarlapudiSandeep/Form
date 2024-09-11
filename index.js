@@ -1,7 +1,6 @@
 document.querySelector("#formTag").addEventListener("submit", myFunction);
 
 function myFunction() {
-  // console.log(myFunction);
   event.preventDefault();
   let firstName = document.querySelector(".firstname").value;
   let lastName = document.querySelector(".lastname").value;
