@@ -1,7 +1,7 @@
 document.querySelector("#formTag").addEventListener("submit", myFunction);
 
 function myFunction() {
-  event.preventDefault(); // Prevent the form from submitting
+  // event.preventDefault(); // Prevent the form from submitting
   // Get the values from the form fields
   let firstName = document.querySelector(".firstname").value;
   let lastName = document.querySelector(".lastname").value;
