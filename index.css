@@ -14,12 +14,14 @@ form {
 
 input {
   border: 1px solid black;
+  border-radius: 4px;
   padding: 8px;
   text-align: center;
   margin: 5px;
 }
 select {
   border: 1px solid black;
+  border-radius: 4px;
   padding: 8px;
   text-align: center;
   margin: 5px;
